@@ -1,0 +1,14 @@
+@media (min-width: 320px) and (max-width: 875px) {
+	.no__adaptiv {
+		background-image: url(..//image/media/No-sait.jpg);
+		background-size: contain;
+
+	}
+	.possition-preloader {
+		display: none;
+	}
+	.page {
+		display: none;
+	}
+	
+}
