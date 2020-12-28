@@ -36,6 +36,8 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
+
+
 /* _______Preloader _____*/
 @keyframes sideSlide {
 	0% {
@@ -148,7 +150,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	width: 100%;
 	height: 100%;
 	position: relative;
-	background-image: url(image/preoader/preoader.jpg);
+	background-image: url(../image/preoader/preoader.jpg);
 	background-size: cover;
 }
 	
@@ -173,3 +175,27 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 
 
+
+
+
+
+
+
+
+/*--------------------*/
+
+
+@keyframes page-display__block {
+	0% {
+		transform: translate(0, 100%);
+	}
+
+	100% {
+		transform: translate(0,0);
+	}
+	
+}
+
+.page__block {
+	display: block;
+}

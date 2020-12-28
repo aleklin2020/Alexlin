@@ -1,33 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css.css">
-
+	<script src="js/preloader.js"></script>
 	<title>Document</title>
 </head>
-<body class="page">
+<body> 
 
-		<header class="header">
-			<div class="header__menu">
-				<div header__menu_logo><p><span>/</span><span>*</span>Alex lin <span>*</span><span>/</span></p></div>
-				<nav class="header__nav">
+		<div class="possition-preloader" id="preloader">
+		<div class="prelaoders" >
+				<div class="prelaoders__content">
+				<div class="prelaoders__title animate">
+			<span class="prelader__color">/</span><span>A</span><span>L</span><span>E</span><span>X</span>&nbsp;&nbsp;<span>L</span><span>I</span><span>N</span><span class="prelader__color">/</span>
+			
+		</div>
+			<div class="prelaoders__subtitle animate preloaders__subtitle_text-saiz">
+			<span>f</span><span>r</span><span>o</span><span>n</span><span>t</span><span>e</span><span>n</span><span>d</span>&nbsp;&nbsp;<span>d</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span>
+			
+		</div>
+			</div>
+
+			
+	</div> </div>
+
+
+
+ <div class="page" id="page-preload">
+		<header class="headers">
+			<div class="header">
+				
+				<h3 class="header__logo"><span class="header__logo-dekoration">/</span>Alex Lin<span class="header__logo-dekoration">/</span></h3>
+				<nav class="header__menu">
 					<ul class="header__lists">
-						<li class="header__list"><a class="header__list-link" href="#">text</a></li>
-						<li class="header__list"><a class="header__list-link" href="#">text</a></li>
-						<li class="header__list"><a class="header__list-link" href="#">text</a></li>
-						<li class="header__list"><a class="header__list-link" href="#">text</a></li>
-						<li class="header__list"><a class="header__list-link" href="#">text</a></li>
+
+						<li class="header__list">
+								<a class="header__list-link" text="nav_1" href=""></a></li>
+
+						<li class="header__list">
+								<a class="header__list-link" text="nav_2" href=""></a></li>
+						
+						<li class="header__list">		
+								<a class="header__list-link" text="nav_3" href=""></a></li>
+						
+						<li class="header__list">
+						<a class="header__list-link" text="nav_4" href=""></a></li>
+						
+						<li class="header__list">
+								<a class="header__list-link" text="nav_5" href=""></a></li>
+						
+						<li class="header__list">
+								<a class="header__list-link" text="nav_6" href=""></a></li>
 					</ul>
 				</nav>
-				<div class="header__tongue">
-					<button class="header__tongue-button">En</button>
-					<button class="header__tongue-button">Ru</button>
-				</div>
-			</div>
-		</header>
 
-	<script src="js/paralaks.js"></script>
+
+				<div class="header__tongue">
+				<input id="lang" type='checkbox' onclick="changeLagnuage()">
+				<label for="lang" class="rus header__tongue-button">RUS</label>
+			   <label for="lang" class="eng header__tongue-button">ENG</label>
+			
+				</div>	
+
+			</div>
+
+				<section class="header-informations">
+
+					<h3 class="header-informations__title  en_lang" text="Header_hello"></h3>
+					<p class="header-informations__subtitle test" text="Header_u_you"></p> 
+
+					<div class="span-detected-languo">
+					<p class="header-informations__text" text="Header_active"> </p>
+					<span class="header-informations__color" text="Header_frontend"></span>
+					
+				</div>
+
+
+					<p class="header-informations__text" text="Header_text"></p> 
+					<div class="header-informations__transley-text">
+					<span class="header-informations__typed-decor typed"></span>
+					<p class="header-informations__text" text="Header_web">  </p> </div>
+				
+				</section>
+				<button class="header__portfolio-link" text="header_button"></button>
+		
+		</header>
+	
+		
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="js/langiecke.js"></script>
+		<script src="js/paralaks-nul.js"></script>
+		<script src="js/jqeru-paralaks.js"></script>
+	<script src="js/typed.js"></script>
+   <script src="js/taped-text.js"></script>
+   
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
