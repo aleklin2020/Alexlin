@@ -1,6 +1,6 @@
 # Personal sait
  
-###important! The site is under development.
+### important! The site is under development.
 ___
 React refactoring
 #
