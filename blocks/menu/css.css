@@ -1,0 +1,269 @@
+.nav-toggle {
+  position: fixed;
+  z-index: 999;
+  cursor: pointer;
+  top: 35px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.nav-toggle:hover h3 {
+  display: none;
+}
+.nav-toggle:hover {
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+.nav-toggle:hover::after {
+  width: 30%;
+  -webkit-transform: translate(-104%, 20px) rotate(-120deg);
+  transform: translate(-104%, 20px) rotate(-120deg);
+}
+.nav-toggle:hover::before {
+  width: 30%;
+  -webkit-transform: translate(-33%, 22px) rotate(140deg);
+  transform: translate(-33%, 22px) rotate(140deg);
+}
+.nav-toggle:before,
+.nav-toggle:after,
+.nav-toggle  span {
+  opacity: 0.8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 2px;
+  border-radius: 50%;
+  background: #777;
+  -webkit-transform: translate(-50%, -50%) rotate(-80deg);
+  transform: translate(-50%, -50%) rotate(-80deg);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.nav-toggle:hover::before,
+.nav-toggle:hover::after,
+.nav-toggle:hover span  {
+  opacity: 1;
+  background: goldenrod;
+}
+.nav-toggle:before,
+.nav-toggle:after {
+  content: "";
+}
+.nav-toggle:before {
+  width: 30%;
+  -webkit-transform: translate(17%, -1px) rotate(100deg);
+  transform: translate(17%, -1px) rotate(100deg);
+}
+.nav-toggle:after {
+  width: 50%;
+  -webkit-transform: translate(-90%, 5px) rotate(-80deg);
+  transform: translate(-90%, 5px) rotate(-80deg);
+}
+.nav-toggle .point {
+  width: 50%;
+  -webkit-transform: translate(-10%, -1px) rotate(-45deg);
+  transform: translate(-10%, -1px) rotate(-45deg);
+}
+.nav-toggle.open:before,
+.nav-toggle.open:after,
+.nav-toggle.open span  {
+  transition: -webkit-transform 0.5s, transform 0.5s, opacity 0.1s, width 0.5s;
+}
+.nav-toggle.open span {
+  opacity: 0;
+  -webkit-transform: translate(50%, -50px) rotate(-45deg);
+  transform: translate(50%, -50px) rotate(-45deg);
+}
+.nav-toggle.open:before {
+  width: 75%;
+  -webkit-transform: translate(-50%, -50%) rotate(125deg);
+  transform: translate(-50%, -50%) rotate(125deg);
+}
+.nav-toggle.open:after {
+  width: 60%;
+  -webkit-transform: translate(-50%, -50%) rotate(35deg);
+  transform: translate(-50%, -50%) rotate(35deg);
+}
+/* ____ menu ___ */
+.nav {
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  -webkit-transition-property: visibility;
+  transition-property: visibility;
+}
+.nav .navList {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+.nav .navList a {
+  margin: 0 13vw;
+  display: block;
+  text-decoration: none;
+  color: #ffffff88;
+  letter-spacing: 1px;
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100%;
+  box-shadow: 10px 10px 20px #000;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.15, 0.1, 0.25, 1.1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.15, 0.1, 0.25, 1.1);
+  transition: transform 0.5s cubic-bezier(0.15, 0.1, 0.25, 1.1);
+  transition: transform 0.5s cubic-bezier(0.15, 0.1, 0.25, 1.1),
+  -webkit-transform 0.5s cubic-bezier(0.15, 0.1, 0.25, 1.1);
+  background-color: #222;
+}
+.nav .navList a p {
+  position: absolute;
+  -webkit-animation: textBG 10s infinite;
+  animation: textBG 10s infinite;
+  font-size: 2.4em;
+  font-size: clamp(20px, 4vw, 40px);
+  font-weight: 500;
+  font-variation-settings: "wdth" 500;
+  font-variation-settings: "wght" 300;
+  font-family: "Inter", Arial, sans-serif;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  padding: 20px;
+  margin: 0 auto;
+  display: inline-block;
+  background: #ccc;
+  background: linear-gradient(
+    -45deg,
+    cornflowerBlue 20%,
+    goldenrod 40%,
+    RoyalBlue 60%,
+    olivedrab 80%
+    );
+  background-size: 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-backface-visibility: hidden;
+}
+.nav .navList a:nth-child(1) p {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.nav .navList a:nth-child(2) p {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.nav .navList a:nth-child(3) p {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.nav .navList a:nth-child(4) p {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.nav .navList a:nth-child(5) p {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.nav .navList a:nth-child(6) p {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.nav .navList a:hover {
+  background-color: #252525;
+}
+.nav .navList a:hover p {
+  font-variation-settings: "wght" 900;
+}
+.nav .navList a:active {
+  background-color: #2f2f2f;
+}
+.nav .navList a:first-child {
+  margin-top: 20vh;
+}
+.nav .navList a:last-child {
+  margin-bottom: 20vh;
+}
+.nav .navList a:nth-child(1) {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.nav .navList a:nth-child(2) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.nav .navList a:nth-child(3) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.nav .navList a:nth-child(4) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.nav .navList a:nth-child(5) {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.nav .navList a:nth-child(6) {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+.nav .navList a:nth-child(odd) {
+  -webkit-transform: translatex(-150vw);
+  transform: translatex(-150vw);
+  border-top-left-radius: 40em;
+  border-bottom-right-radius: 40em;
+}
+.nav .navList a:nth-child(even) {
+  -webkit-transform: translatex(150vw);
+  transform: translatex(150vw);
+  border-bottom-left-radius: 40em;
+  border-top-right-radius: 40em;
+}
+.nav.active {
+  visibility: visible;
+}
+.nav.active .navList a {
+  opacity: 1;
+  -webkit-transform: translatex(0vw);
+  transform: translatex(0vw);
+}
+@-webkit-keyframes morph {
+  50% {
+    font-variation-settings: "wght" 900;
+  }
+}
+
+@keyframes morph {
+  50% {
+    font-variation-settings: "wght" 900;
+  }
+}
+@-webkit-keyframes textBG {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes textBG {
+  50% {
+    background-position: 100% 50%;
+  }
+}

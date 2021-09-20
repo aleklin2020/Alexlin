@@ -1,0 +1,41 @@
+button {
+  background: inherit;
+  outline: none;
+  border:none;
+}
+.button__lang {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  border: 1px white solid;
+  padding: 2px;
+  position: fixed;
+  z-index: 999;
+  top: 50px;
+  left: 70px;
+}
+.button__lang:hover {
+  border: 1px goldenrod solid;
+  opacity: 0.7;
+}
+#lang {
+  display: none;
+}
+#lang:checked ~ .rus,
+#lang:not(:checked) ~ .eng {
+  display: none;
+}
+
+label[for=lang] {
+  -webkit-user-select: none;
+          -moz-user-select: none;
+           -ms-user-select: none;
+       user-select: none;
+  cursor: pointer;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

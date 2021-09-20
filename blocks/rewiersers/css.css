@@ -1,0 +1,61 @@
+.contact__close {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+}
+.close {
+	background: goldenrod;
+	border-radius: 50%;
+	position: absolute;
+	background-image: url(../../image/form/rew-close.svg);
+	background-position: center;
+	width: 48px;
+	height: 48px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+}
+.close:hover {
+	opacity: 0.7;
+}
+.some-space {
+	margin-left: 70px;
+}
+.image__rever {
+	background-image: url(../../image/form/Vector.svg);
+	background-repeat: no-repeat;
+	width: 218px;
+	height: 200px;
+}
+.image__rever-2 {
+	position: absolute;
+	top: -100px;
+	left: -150px;
+	background-image: url(../../image/form/Vector-2.svg);
+	background-repeat: no-repeat;
+	width: 140px;
+	height: 130px;	
+}
+.rewiverser {	
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 100px;
+	height: 100%;
+	padding-left: 100px;
+	padding-bottom: 20px;
+	visibility: hidden;
+	background: rgba(0,0,0, .8);
+	overflow-y: scroll;
+	z-index: 9999;
+	opacity: 0;
+	-webkit-transition: opacity .5s, visibility .5s ease-in-out;
+	transition: opacity .5s, visibility .5s ease-in-out;
+}
+.active_form {
+	visibility: visible;
+	opacity: 1;
+}
+
+

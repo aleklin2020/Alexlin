@@ -1,0 +1,35 @@
+.footer {
+  position: relative;
+  background: #171717;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer::after {
+  background-image: 
+}
+.footer__author {
+  margin: 0;
+  padding-left: 30px;
+  opacity: 0.7;
+  font-size: 18px;
+  color: #aaa;
+  font-weight: 400;
+  font-family: 'Dancing Script', cursive , sans-serif;
+  font-style: normal;
+  font-weight: 900;
+}
+.typed {
+  color: goldenrod;
+  font-size: 14px;
+  margin-left: 20px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 1px;
+
+}
